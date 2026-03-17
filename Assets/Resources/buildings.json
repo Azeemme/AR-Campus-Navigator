@@ -1,0 +1,225 @@
+{
+  "buildings": [
+    {
+      "buildingId": "LWSN",
+      "name": "Lawson Computer Science Building",
+      "shortName": "Lawson",
+      "latitude": 40.4276,
+      "longitude": -86.9132,
+      "department": "Computer Science",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "Lawson is home to Purdue Computer Science and connected to the Engineering Mall.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "PMU",
+      "name": "Purdue Memorial Union",
+      "shortName": "PMU",
+      "latitude": 40.4259,
+      "longitude": -86.9081,
+      "department": "Student Life",
+      "hours": "Daily 7am-11pm",
+      "funFact": "The PMU is a central campus hub for dining, study, and events.",
+      "visibilityRadiusMeters": 350.0
+    },
+    {
+      "buildingId": "EE",
+      "name": "Electrical Engineering Building",
+      "shortName": "EE",
+      "latitude": 40.4289,
+      "longitude": -86.9112,
+      "department": "Electrical & Computer Engineering",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "The EE Building supports labs and classrooms for ECE students and research.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "MATH",
+      "name": "Mathematical Sciences Building",
+      "shortName": "Math",
+      "latitude": 40.4237,
+      "longitude": -86.9138,
+      "department": "Mathematics",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "The Math Building hosts many core Purdue math courses and faculty offices.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "STEW",
+      "name": "Stewart Center",
+      "shortName": "Stewart",
+      "latitude": 40.4244,
+      "longitude": -86.9084,
+      "department": "Academic Services",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "Stewart Center contains major lecture halls used for large campus classes.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "HEAV",
+      "name": "Heavilon Hall",
+      "shortName": "Heavilon",
+      "latitude": 40.4232,
+      "longitude": -86.9108,
+      "department": "Liberal Arts",
+      "hours": "Mon-Fri 7am-8pm",
+      "funFact": "Heavilon Hall includes Loeb Playhouse, a venue for performances and events.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "STON",
+      "name": "Stone Hall",
+      "shortName": "Stone",
+      "latitude": 40.4248,
+      "longitude": -86.9153,
+      "department": "Earth, Atmospheric, and Planetary Sciences",
+      "hours": "Mon-Fri 7am-7pm",
+      "funFact": "Stone Hall supports earth and atmospheric science teaching and research.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "ARMS",
+      "name": "Armstrong Hall of Engineering",
+      "shortName": "Armstrong",
+      "latitude": 40.4282,
+      "longitude": -86.9127,
+      "department": "College of Engineering",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "Armstrong Hall sits on Purdue's Engineering Mall near several core buildings.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "REC",
+      "name": "Recitation Building",
+      "shortName": "Recitation",
+      "latitude": 40.4247,
+      "longitude": -86.9119,
+      "department": "Academic Services",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "The Recitation Building is known for its large lecture halls and historic design.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "LILY",
+      "name": "Lilly Hall of Life Sciences",
+      "shortName": "Lilly",
+      "latitude": 40.4228,
+      "longitude": -86.9162,
+      "department": "Biological Sciences",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "Lilly Hall is a major hub for life sciences courses, labs, and research at Purdue.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "COREC",
+      "name": "France A. Cordova Recreational Sports Center",
+      "shortName": "CoRec",
+      "latitude": 40.4284,
+      "longitude": -86.9222,
+      "department": "Recreation & Wellness",
+      "hours": "Mon-Fri 6am-11pm",
+      "funFact": "The CoRec is Purdue's main recreation facility with courts, pools, and fitness areas.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "ROSS",
+      "name": "Ross-Ade Stadium",
+      "shortName": "Ross-Ade",
+      "latitude": 40.4396,
+      "longitude": -86.9211,
+      "department": "Intercollegiate Athletics",
+      "hours": "Mon-Fri 8am-5pm",
+      "funFact": "Ross-Ade Stadium is the home field for Purdue Boilermakers football.",
+      "visibilityRadiusMeters": 400.0
+    },
+    {
+      "buildingId": "MACK",
+      "name": "Mackey Arena",
+      "shortName": "Mackey",
+      "latitude": 40.432,
+      "longitude": -86.9233,
+      "department": "Intercollegiate Athletics",
+      "hours": "Mon-Fri 8am-5pm",
+      "funFact": "Mackey Arena is home to Purdue men's and women's basketball.",
+      "visibilityRadiusMeters": 400.0
+    },
+    {
+      "buildingId": "ELLT",
+      "name": "Elliott Hall of Music",
+      "shortName": "Elliott",
+      "latitude": 40.4247,
+      "longitude": -86.909,
+      "department": "Patti and Rusty Rueff School of Design, Art, and Performance",
+      "hours": "Mon-Fri 8am-10pm",
+      "funFact": "Elliott Hall is known for its large proscenium theater and performance spaces.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "BRNG",
+      "name": "Beering Hall of Liberal Arts and Education",
+      "shortName": "Beering",
+      "latitude": 40.4253,
+      "longitude": -86.9155,
+      "department": "College of Liberal Arts",
+      "hours": "Mon-Fri 7am-8pm",
+      "funFact": "Beering Hall houses classrooms and offices for several Liberal Arts programs.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "BIRCK",
+      "name": "Birck Nanotechnology Center",
+      "shortName": "Birck",
+      "latitude": 40.4233,
+      "longitude": -86.9256,
+      "department": "Discovery Park",
+      "hours": "Mon-Fri 8am-6pm",
+      "funFact": "Birck supports nanotechnology research with advanced cleanroom facilities.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "WALC",
+      "name": "Wilmeth Active Learning Center",
+      "shortName": "WALC",
+      "latitude": 40.4274,
+      "longitude": -86.9114,
+      "department": "Libraries and School of Information Studies",
+      "hours": "Mon-Thu 7am-11pm",
+      "funFact": "WALC is a modern active learning building with study spaces and classrooms.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "HIKS",
+      "name": "Hicks Undergraduate Library",
+      "shortName": "Hicks",
+      "latitude": 40.4247,
+      "longitude": -86.9131,
+      "department": "Purdue Libraries",
+      "hours": "Mon-Thu 8am-2am",
+      "funFact": "Hicks is a popular study destination and part of the Purdue Libraries system.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "KRAN",
+      "name": "Krannert Building",
+      "shortName": "Krannert",
+      "latitude": 40.4237,
+      "longitude": -86.9058,
+      "department": "Krannert School of Management",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "The Krannert Building is a centerpiece for business education at Purdue.",
+      "visibilityRadiusMeters": 300.0
+    },
+    {
+      "buildingId": "YONG",
+      "name": "Young Hall",
+      "shortName": "Young",
+      "latitude": 40.4262,
+      "longitude": -86.9126,
+      "department": "College of Science",
+      "hours": "Mon-Fri 7am-10pm",
+      "funFact": "Young Hall hosts science classrooms and labs near the heart of campus.",
+      "visibilityRadiusMeters": 300.0
+    }
+  ]
+}
+
