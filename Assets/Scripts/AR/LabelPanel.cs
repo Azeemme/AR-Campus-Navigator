@@ -8,6 +8,7 @@ using TMPro;
 public class LabelPanel : MonoBehaviour
 {
     private const float DisableThresholdAlpha = 0.01f;
+    private const float DefaultPanelWidth = 320f;
 
     /// <summary>
     /// Data backing this label panel instance.
@@ -26,12 +27,23 @@ public class LabelPanel : MonoBehaviour
     [SerializeField] private float fadeOutFarMeters = 300f;
 
     [Header("References")]
+    [SerializeField] private RectTransform rootRectTransform;
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI distanceText;
+    [SerializeField] private TextMeshProUGUI departmentText;
+    [SerializeField] private TextMeshProUGUI hoursText;
+    [SerializeField] private TextMeshProUGUI funFactText;
+    [SerializeField] private GameObject funFactSection;
+
+    [Header("Expand/Collapse Sizing")]
+    [SerializeField] private float collapsedHeight = 120f;
+    [SerializeField] private float expandedHeight = 200f;
 
     private int lastRoundedDistanceValue = -1;
     private bool lastDistanceDisplayedInKilometers;
+    private float cachedPanelWidth = DefaultPanelWidth;
+    private bool hasCachedPanelWidth;
 
     /// <summary>
     /// Initializes this panel with the specified building data.
@@ -44,11 +56,38 @@ public class LabelPanel : MonoBehaviour
         IsExpanded = false;
         lastRoundedDistanceValue = -1;
         lastDistanceDisplayedInKilometers = false;
+        CacheRootRectIfNeeded();
+        CachePanelWidthIfNeeded();
 
-        if (nameText != null && BuildingData != null)
+        if (BuildingData != null)
         {
-            nameText.text = BuildingData.name;
+            if (nameText != null)
+            {
+                nameText.text = BuildingData.name;
+            }
+
+            if (departmentText != null)
+            {
+                departmentText.text = BuildingData.department;
+            }
+
+            if (hoursText != null)
+            {
+                hoursText.text = BuildingData.hours;
+            }
+
+            if (funFactText != null)
+            {
+                funFactText.text = BuildingData.funFact;
+            }
         }
+
+        if (funFactSection != null)
+        {
+            funFactSection.SetActive(false);
+        }
+
+        ApplyPanelHeight(collapsedHeight);
     }
 
     /// <summary>
@@ -87,6 +126,13 @@ public class LabelPanel : MonoBehaviour
     public void ToggleExpand()
     {
         IsExpanded = !IsExpanded;
+
+        if (funFactSection != null)
+        {
+            funFactSection.SetActive(IsExpanded);
+        }
+
+        ApplyPanelHeight(IsExpanded ? expandedHeight : collapsedHeight);
     }
 
     /// <summary>
@@ -95,6 +141,53 @@ public class LabelPanel : MonoBehaviour
     public void Collapse()
     {
         IsExpanded = false;
+
+        if (funFactSection != null)
+        {
+            funFactSection.SetActive(false);
+        }
+
+        ApplyPanelHeight(collapsedHeight);
+    }
+
+    private void CacheRootRectIfNeeded()
+    {
+        if (rootRectTransform != null)
+        {
+            return;
+        }
+
+        rootRectTransform = transform as RectTransform;
+    }
+
+    private void CachePanelWidthIfNeeded()
+    {
+        if (hasCachedPanelWidth)
+        {
+            return;
+        }
+
+        if (rootRectTransform != null)
+        {
+            cachedPanelWidth = rootRectTransform.sizeDelta.x;
+            if (cachedPanelWidth <= 0f)
+            {
+                cachedPanelWidth = DefaultPanelWidth;
+            }
+
+            hasCachedPanelWidth = true;
+        }
+    }
+
+    private void ApplyPanelHeight(float height)
+    {
+        if (rootRectTransform == null)
+        {
+            return;
+        }
+
+        CachePanelWidthIfNeeded();
+        rootRectTransform.sizeDelta = new Vector2(cachedPanelWidth, height);
     }
 
     private float ComputeAlpha(float distanceMeters, float effectiveMax)
