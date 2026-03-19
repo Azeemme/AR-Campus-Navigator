@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 7075215799009267377}
   - component: {fileID: 1013817922416811113}
   - component: {fileID: 1116308609621488604}
+  - component: {fileID: 8123456789012345678}
   - component: {fileID: 1752858117930501916}
   m_Layer: 5
   m_Name: LabelPanel 1
@@ -654,6 +655,27 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!65 &8123456789012345678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748015418831884378}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 320, y: 160, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1752858117930501916
 MonoBehaviour:
   m_ObjectHideFlags: 0
